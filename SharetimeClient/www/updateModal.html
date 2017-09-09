@@ -1,0 +1,42 @@
+<ion-view class="modal">
+
+  <ion-header-bar>
+    <button class="button button-dark" ng-click="hideMessage()">返回</button>
+    <h1 class="title">发布</h1>
+  </ion-header-bar>
+
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        结束时间
+        <input type="datetime-local" placeholder="结束时间" ng-model="infoModal.time">
+      </ion-item>
+      <ion-item class="item item-input item-select">
+        <div class="input-label">
+          共享类型
+        </div>
+        <select ng-model="infoModal.typeStr">
+          <option>代购</option>
+          <option selected>代练</option>
+          <option>代驾</option>
+          <option>宠物代养</option>
+          <option selected>洗车</option>
+          <option>跑腿</option>
+        </select>
+
+      </ion-item>
+      <ion-item>
+        价格：
+        <input type="number" ng-model="infoModal.price" class="inline">
+        <span ng-show="infoModal.price">元</span>
+      </ion-item>
+      <ion-item>
+        说明：
+        <textarea rows="5" ng-model="infoModal.des" placeholder="描述"></textarea>
+      </ion-item>
+    </ion-list>
+    <button class="button button-dark button-full space-top" ng-click="toUpdate()">发布</button>
+  </ion-content>
+
+</ion-view>
+

@@ -1,0 +1,46 @@
+<ion-view view-title="ST" class="tab-hidden">
+
+  <ion-nav-buttons>
+    <button class="button button-energized button-clear" ng-click="updateMessage()">发布</button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button button-royal button-clear">消息</button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <div id="map" ng-style="{width:mapSize.width,height:mapSize.height}"></div>
+
+    <div ng-show="isShowContent" class="stHomeUserInfo">
+
+      <ion-list>
+
+        <ion-item>
+          共享时间的类型：
+          <span ng-bind="markerInfo.type"></span>
+        </ion-item>
+
+
+        <ion-item>
+          起始时间:
+          <span ng-bind="markerInfo.startTimeString"> </span><br>
+          结束时间:
+          <span ng-bind="markerInfo.endTimeString"></span>
+        </ion-item>
+
+        <ion-item>
+          当前的位置:
+          <span ng-bind="markerInfo.address"></span>
+        </ion-item>
+
+        <ion-item>
+          共享时间的价格:
+          <span ng-bind="markerInfo.price"></span>
+        </ion-item>
+
+      </ion-list>
+      <a class="button button-light" ng-href="#/tab/message/{{toUserID}}">CallMe</a>
+    </div>
+  </ion-content>
+
+</ion-view>

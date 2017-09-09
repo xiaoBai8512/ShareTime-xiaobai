@@ -1,1 +1,53 @@
 /* Empty. Add your own CSS if you like */
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.button.space-top{
+  margin-top: 2rem;
+}
+
+input.inline{
+  display: inline;
+}
+
+.stHomeUserInfo{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #ff787a;
+}
+
+.container-message{
+  height: 10rem;
+}
+
+.inputView{
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+
+  display: flex;
+  height: 44px;
+}
+
+.inputView > input{
+  height: 44px;
+  flex: 5;
+  border: 1px solid #b7a6fb;
+  background-color: #ff8b35;
+}
+
+.inputView > button{
+  flex: 1;
+  border: 1px solid #adfb30;
+
+}
+
+
