@@ -1,0 +1,21 @@
+.DS_Store
+node_modules/
+/dist/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.svn/
+.tern-port
+.tern-project
+.env.local
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.swp
+*.swo
+*.njsproj
+*.sln
+*.zip
